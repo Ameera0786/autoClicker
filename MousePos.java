@@ -1,3 +1,5 @@
+package autoClicker;
+
 import java.awt.*;
 import java.awt.event.InputEvent;
 

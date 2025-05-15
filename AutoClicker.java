@@ -104,7 +104,9 @@ public class AutoClicker {
             // Wait the rest of the duration
             long remaining = duration - clickDuration;
             if (remaining > 0) {
+                //Mine or wait 
                 mineHelper(robot, remaining);
+                //Thread.sleep(remaining);
             }
         }
     }

@@ -9,11 +9,11 @@ public class MousePos {
         Robot robot = new Robot();
         while(true) {
             Point mouseLocation = MouseInfo.getPointerInfo().getLocation();
-//            System.out.println("Mouse Position: X = " + mouseLocation.x + ", Y = " + mouseLocation.y);
+            System.out.println("Mouse Position: X = " + mouseLocation.x + ", Y = " + mouseLocation.y);
+//            System.out.println("Clicked");
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
-            System.out.println("Clicked");
-            Thread.sleep( 5000);
+            robot.delay(5000);
         }
     }
 }
